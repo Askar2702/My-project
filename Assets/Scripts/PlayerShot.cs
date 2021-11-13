@@ -48,10 +48,9 @@ public class PlayerShot : MonoBehaviour
         if (Input.touchCount > 0)
         {
             Touch touch = Input.GetTouch(0);
-            Ray ray = Camera.main.ScreenPointToRay(touch.position);
             if (touch.phase == TouchPhase.Ended)
             {
-                if (Physics.Raycast(ray, out hit))
+                if (Physics.Raycast(_camera.transform.position, _camera.transform.forward, out hit))
                 {
                     if (hit.transform.GetComponent<Rigidbody>() && isFire)
                     {

@@ -33,7 +33,7 @@ public class Controll : MonoBehaviour
     public void OnEnableAim()
     {
         if (!_playerShot.isFire) return;
-        _currentPos = new Vector3(0.52f, 12f, -20f);
+        _currentPos = new Vector3(0.52f, 12f, -10f);
     }
 
     private void OnDisableAim()

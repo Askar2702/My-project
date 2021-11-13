@@ -48,7 +48,7 @@ public class Aim : MonoBehaviour
     {
         if (!_playerShot.isFire) return;
         _scale = 1f;
-        _fieldOfView = 10;
+        _fieldOfView = 30;
     }
 
     private void OnDisableAim()
